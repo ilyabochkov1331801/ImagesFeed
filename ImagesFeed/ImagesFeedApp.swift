@@ -11,7 +11,7 @@ import SwiftUI
 struct ImagesFeedApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ImagesFeedView(viewModel: ImagesFeedViewModel(apiService: ImagesFeedAPIService()))
         }
     }
 }
